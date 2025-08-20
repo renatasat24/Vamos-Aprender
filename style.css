@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url('crianças.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: white; /* texto branco para melhor contraste */
+}
+
+#app {
+  background-color: rgba(0, 0, 0, 0.5); /* fundo preto com 50% de transparência */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.tela {
+  display: none;
+}
+
+.tela:not(.escondido) {
+  display: block;
+}
+
+button {
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#abecedario button,
+#numeros button {
+  padding: 15px;
+  font-size: 18px;
+  margin: 5px;
+}

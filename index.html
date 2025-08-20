@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aprender é Divertido!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="tela-inicial" class="tela">
+      <h1>Vamos Aprender!</h1>
+      <button onclick="abrirPalavras()">🅰️ Palavras</button>
+      <button onclick="abrirNumeros()">🔢 Números</button>
+    </div>
+
+    <div id="tela-palavras" class="tela escondido">
+      <h2>Escolha uma letra</h2>
+      <div id="abecedario"></div>
+      <div id="frase" style="font-size: 24px; margin: 15px 0;"></div>
+      <button onclick="lerPalavra()">🔊 Ler Palavra</button>
+      <button onclick="voltarInicio()">🔙 Voltar</button>
+      <button onclick="limparPalavra()">🗑️ Limpar</button>
+    </div>
+
+    <div id="tela-numeros" class="tela escondido">
+      <h2>Escolha uma operação</h2>
+      <div id="operacoes">
+        <button onclick="selecionarOperacao('soma')">➕ Soma</button>
+        <button onclick="selecionarOperacao('subtracao')">➖ Subtração</button>
+        <button onclick="selecionarOperacao('multiplicacao')">✖️ Multiplicação</button>
+        <button onclick="selecionarOperacao('divisao')">➗ Divisão</button>
+      </div>
+
+      <div id="info-operacao" style="margin: 15px 0; font-size: 18px; font-weight: bold;"></div>
+
+      <div id="input-numeros" style="display:none;">
+        <p>Digite um número ou escolha abaixo:</p>
+        <input type="number" id="input-numero" min="1" max="100" />
+        <button onclick="adicionarNumeroInput()">OK</button>
+        <div id="numeros"></div>
+      </div>
+
+      <div id="resultado" style="margin-top: 20px; font-size: 20px; font-weight: bold;"></div>
+
+      <button onclick="voltarInicio()">🔙 Voltar</button>
+      <button onclick="limparOperacao()">🗑️ Limpar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
